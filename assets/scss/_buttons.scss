@@ -22,7 +22,7 @@
 
 .btn-primary {
   background-image: $primary-gradient;
-  color: $text-color-dark;
+  color: $white;
   transition: background 1s ease-out;
 
   &:active {
@@ -38,7 +38,7 @@
 .btn-secondary {
   background-image: $secondary-gradient;
   background-color: transparent;
-  color: $text-color-dark;
+  color: $white;
 
   &:active {
     background: $secondary-gradient !important;
