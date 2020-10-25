@@ -1,35 +1,73 @@
 {{ define "main" }}
 
   <!-- hero area -->
-  <section class="hero-section hero" style="background:#f5f6fd">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center zindex-1">
-          {{ with .Site.Params.banner }}
-          <h2 class="mb-3">{{ .title | safeHTML }}</h2>
-          <p class="mb-4">{{ .content | safeHTML }}</p>
-          {{ end }}
-          <a href="{{ .Site.Params.banner.URL | absURL }}" class="btn btn-secondary btn-lg">{{ .Site.Params.banner.btnText }}</a>
+  <section class="hero">
+    <div class=" hero-section background" style="background-image: url('images/hero-area/hero.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center zindex-1 hero-card">
+            {{ with .Site.Params.banner }}
+            <h3 class="mb-3">{{ .title | safeHTML }}</h3>
+            <p class="mb-4">{{ .content | safeHTML }}</p>
+            {{ end }}
+            <a href="{{ .Site.Params.banner.URL | absURL }}" class="btn btn-secondary btn-block">{{ .Site.Params.banner.btnText }}</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="section-separate-0 ">
-    <svg width="100%" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M762.88 44.733C349.5 97.1375 0 12.2644 0 12.2644V89.5H1440V14.429C1190.74 -12.7805 1060.57 4.81321 869.03 30.703C835.807 35.1936 800.737 39.9338 762.88 44.733Z" fill="white"></path>
-    </svg> 
-</div>  
   <!-- /hero-area -->
+
+  <!-- best-app -->
+<section class="best-app bg-gray">
+    <div class="container app_content">
+      <div class="row">
+        <div class="col-md-5  mb-0">
+          <h4>World's no.1 destination for beauty and wellness</h4>
+          <p>Fresha inspires people to look and feel their best – which is why we're trusted by millions of customers and thousands of businesses worldwide</p>
+        </div>
+  
+        <div class="col-md-6 offset-md-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>50,000+</h4>
+              <p>partner businesses</p>
+            </div>
+  
+            <div class="col-md-6">
+              <h4>50,000+</h4>
+              <p>partner businesses</p>
+            </div>
+  
+            <div class="col-md-6">
+              <h4>150,000+</h4>
+              <p>stylists and professionals</p>
+            </div>
+  
+            <div class="col-md-6">
+              <h4>500+</h4>
+              <p>appointments booked</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+  <!-- /best-app -->
+
+
   {{ if .Site.Data.homepage.feature.enable }}
   <!-- feature -->
-  <section class="section feature mb-0" id="feature">
+  <section class="section feature mb-0 bg-gray" id="feature">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 mb-30 text-center">
           {{ with .Site.Data.homepage.feature }}
           <h2 class="section-title">{{ .title }}</h2>
-          <p class="mb-100">{{ .description | safeHTML }}</p>
+          <!-- <p class="mb-100">{{ .description | safeHTML }}</p> -->
           {{ end }}
         </div>
         {{ range .Site.Data.homepage.feature.featureItem }}

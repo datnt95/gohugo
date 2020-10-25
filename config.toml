@@ -86,8 +86,8 @@ googleAnalitycsID = "Your ID"
 
   # Banner
   [params.banner]
-  title = "Take Control of your <br> Project and Team"
-  content = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur."
+  title = "Instantly book salons and spas nearby"
+  content = "Duis aute irure dolor in reprehenderit"
   bgImage = "images/hero-area/banner-bg.svg"
   image = "images/hero-area/banner-img.png"
   btnText = "explore us"

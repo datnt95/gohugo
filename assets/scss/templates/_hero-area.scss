@@ -1,9 +1,10 @@
 .hero-section {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 100px;
+  padding-bottom: 300px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
+  z-index: 1;
 }
 
 .banner-image {
@@ -14,6 +15,17 @@
 }
 
 .hero {
+  .hero-card {
+    background-color: aliceblue;
+    padding: 30px 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-top: 50px;
+
+    h3 {
+      font-size: 20px;
+    }
+  }
   &-bg-1 {
     position: absolute;
     left: 30px;

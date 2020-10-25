@@ -4,6 +4,10 @@
   font-size: 30px;
 }
 
+.bg-gray {
+  background-color: #F7F8F8;
+}
+
 .section-separate-0 {
   background-color: #f5f6fd;
   display: -webkit-box;
@@ -13,9 +17,22 @@
   margin-bottom: -20px;
 }
 
+.best-app {
+  height: 300px;
+  width: 100%;
+
+  .app_content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 40px 40px 40px;
+    top: -50px;
+    z-index: 10;
+  }
+}
+
 .feature {
   position: relative;
-
   &-item {
     h4 {
       line-height: 1;
