@@ -1,6 +1,6 @@
 # Features 
 feature:
-  enable : true
+  enable : false
   title : "Awesome Features"
   description : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident"
   featureItem:
@@ -24,6 +24,28 @@ feature:
       icon : "ti-layers-alt"
       content : "Consectetur adipiscing elit donec tempus pellentesque dui."
 
+
+# Solution
+solution:
+  enable : true
+  title : "A complete solution to manage your business"
+  description : "Our powerful suite of tools helps increase sales, manage your schedules and engage with your clients"
+  solutionItem:
+    # Solution item
+    - title : "Appointment scheduling"
+      icon : "ti-timer"
+      content : "Professional calendar tools, incredibly easy to use across mobiles, tablets and desktops"
+          
+    # Solution item
+    - title : "Reporting and analytics"
+      icon : "ti-stats-up"
+      content : "Optimize your business with insights from live performance dashboards and financial reporting" 
+    
+    # Solution item
+    - title : "Payment processing"
+      icon : "ti-credit-card"
+      content : "Effortless in-app payments with saved client cards, and in-store payment terminals"
+     
 # Marketing section
 marketing:
   enable : true
@@ -86,10 +108,9 @@ team:
       image : "images/team/team-1.jpg"
       content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they"
       
-
 # pricing
 pricing:
-  enable  : true
+  enable  : false
   title : "Our Pricing"
   description : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br> fugiat nulla pariatur. Excepteur sint occaecat "
   table:
@@ -116,7 +137,8 @@ pricing:
 
 # client logo slider
 clientSlider:
-  enable : true
+  enable : false
+  title : "Our Clients"
   list:
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "#"

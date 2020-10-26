@@ -16,7 +16,7 @@ about:
 
 # products
 products:
-  enable: true
+  enable: false
   title : "Our Product"
   description : "Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia."
   bgImage : "images/backgrounds/about-bg.svg"
@@ -48,7 +48,7 @@ vision:
 
 # our clients
 clients :
-  enable : true
+  enable : false
   title : "Our Clients"
   clientList :
     - logo : "images/clients-logo/client-1.png"

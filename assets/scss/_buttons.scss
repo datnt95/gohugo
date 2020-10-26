@@ -1,8 +1,8 @@
 .btn {
-  font-size: 18px;
+  font-size: 16px;
   font-family: $primary-font;
   text-transform: capitalize;
-  padding: 15px 60px;
+  padding: 10px 30px;
   font-weight: 400;
   border: 0;
   border-radius: 5px;
@@ -20,20 +20,20 @@
   }
 }
 
-.btn-primary {
-  background-image: $primary-gradient;
-  color: $white;
-  transition: background 1s ease-out;
+// .btn-primary {
+//   background-color: $primary-color;
+//   color: $white;
+//   transition: background 1s ease-out;
 
-  &:active {
-    background: $primary-gradient !important;
-  }
+//   &:active {
+//     background: $primary-gradient !important;
+//   }
 
-  &:hover {
-    background: $primary-gradient-alt;
-    color: $text-color-dark;
-  }
-}
+//   &:hover {
+//     background: $primary-gradient-alt;
+//     color: $text-color-dark;
+//   }
+// }
 
 .btn-secondary {
   background-image: $secondary-gradient;
@@ -52,4 +52,17 @@
 
 .btn-lg{
   padding: 15px 85px;
+}
+
+.btn-primary {
+  background-color: #fff !important;
+  color: $primary-color;
+
+  &:active {
+    background: $primary-gradient !important;
+  }
+
+  &:hover {
+    color: $text-color-dark;
+  }
 }

@@ -1,6 +1,7 @@
 .about {
   position: relative;
   overflow: visible;
+  padding-top: 100px;
   &-video {
     position: relative;
 
@@ -66,7 +67,6 @@
     }
   }
 }
-
 
 .play-btn {
   height: 70px;

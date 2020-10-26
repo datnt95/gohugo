@@ -1,11 +1,19 @@
-.navbar-light .navbar-nav .nav-link {
-  color: $text-color-dark;
-}
-
 .navigation {
   transition: .3s ease;
+  z-index: 10;
+  background-color: #006e83;
+  opacity: .9;
   @include desktop {
     background: $white;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $text-color-dark;
+  color: $white;
+  font-size: 15px;
+  @include mobile {
+    color: $text-color-dark;
   }
 }
 
@@ -18,14 +26,14 @@
   }
 }
 
-.nav-bg {
-  background-color: $white;
-  box-shadow: 0px 10px 20px 0px rgba(0, 141, 236, 0.10);
+// .nav-bg {
+//   background-color: $white;
+//   box-shadow: 0px 10px 20px 0px rgba(0, 141, 236, 0.10);
 
-  .navbar {
-    padding: 10px 0;
-  }
-}
+//   .navbar {
+//     padding: 10px 0;
+//   }
+// }
 
 .nav-item {
   padding: 20px 10px;

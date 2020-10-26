@@ -2,6 +2,13 @@
 .logo {
   font-weight: 900;
   font-size: 30px;
+  @include mobile {
+    color: $primary-color;
+  }
+}
+
+.newsletter-btn {
+  background-color: $primary-color !important;
 }
 
 .section-separate-0 {
@@ -69,11 +76,40 @@
   }
 }
 
+.solution {
+  background-image: linear-gradient(59deg, #006e83 0%, #006e83 95%);
+  .solution-item {
+    padding: 30px;
+    background-color: #fafafe;
+    border-radius: 6px;
+  }
+  .solution-icon {
+    font-size: 30px;
+    color: $primary-color;
+  }
+  .content {
+    font-size: 15px;
+  }
+}
+
+.best-app {
+  background-color: #f5f6fd;
+  .app_content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .value {
+      font-size: 32px;
+      color: #ff1154;
+      font-weight: 900;
+    }
+  }
+}
+
+
 .seo {
   position: relative;
   overflow: visible;
-  background-color: #f5f6fd;
-  padding-top: 50px;
+  padding-top: 100px;
 
   &-bg {
     position: absolute;
