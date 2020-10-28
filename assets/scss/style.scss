@@ -1,14 +1,3 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-
-PROJECT:	Project Name
-VERSION:	Versoin Number
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
-
 @import 'variables';
 
 @import 'mixins';
@@ -19,12 +8,32 @@ VERSION:	Versoin Number
 
 @import 'common';
 
-@import 'templates/navigation';
+@import 'partials/navigation';
 
-@import 'templates/hero-area';
+@import 'partials/footer';
 
-@import 'templates/homepage';
+@import 'partials/hero-area';
 
-@import 'templates/about';
+@import 'partials/newsletter';
 
-@import 'templates/contact';
+@import 'partials/feature';
+
+@import 'partials/solution';
+
+@import 'partials/best-app';
+
+@import 'partials/team';
+
+@import 'partials/marketing';
+
+@import 'partials/services';
+
+@import 'partials/pricing';
+
+@import 'pages/homepage';
+
+@import 'pages/about';
+
+@import 'pages/contact';
+
+@import 'pages/services';

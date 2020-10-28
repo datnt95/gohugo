@@ -1,0 +1,62 @@
+.service-bg-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 400px;
+  }
+  
+  .service {
+    &-bg-1 {
+      position: absolute;
+      left: 50px;
+      top: 10%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-2 {
+      position: absolute;
+      right: 50px;
+      top: 10%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-3 {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-4 {
+      position: absolute;
+      left: 50px;
+      bottom: 30%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-5 {
+      position: absolute;
+      left: 10%;
+      bottom: 5%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+<!-- best-app -->
+<section class="best-app">
+    <div class="container app_content">
+        <div class="row">
+            <div class="col-md-5  mb-0">
+                <h4>{{ .Site.Data.best.title }}</h4>
+                <p>{{ .Site.Data.best.content }}</p>
+            </div>
+
+            <div class="col-md-6 offset-md-1">
+                <div class="row">
+                    {{ range .Site.Data.best.item }}
+                    <div class="col-md-6">
+                        <h4 class="value">{{ .value}}</h4>
+                        <p>{{ .key}}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

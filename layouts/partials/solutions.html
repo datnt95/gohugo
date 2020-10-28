@@ -1,0 +1,28 @@
+<!-- Solution -->
+{{ if .Site.Data.solution.enable }}
+<section class="section solution">
+  <div class="container">
+    <h3 class="text-center">
+      {{.Site.Data.solution.title}}
+    </h3>
+    <p class="text-center mb-60">
+      {{.Site.Data.solution.description}}
+    </p>
+
+    <div class="row list-solution">
+      {{ range .Site.Data.solution.solutionItem }}
+        <div class="col-md-4 mb-40">
+            <div class="solution-item">
+              <div class="mb-10">
+                <i class="{{ .icon }} solution-icon"></i>
+              </div>
+              <h4>{{ .title }}</h4>
+              <p class="content">{{ .content }}</p>
+            </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Solution -->

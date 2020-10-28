@@ -1,0 +1,30 @@
+.footer {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-top: 1px solid #ccc;
+
+    &-section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  
+    }
+  
+    &-menu {
+      a {
+        font-size: 14px;
+        color: $text-color;
+        display: block;
+        padding: 10px;
+      }
+    }
+
+    .logo {
+        font-weight: 900;
+        font-size: 30px;
+        color: $dark;
+        @include tablet {
+          color: $primary-color;
+        }
+    }
+}

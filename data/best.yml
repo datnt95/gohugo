@@ -1,0 +1,19 @@
+enable: true
+title: "World's no.1 destination for beauty and wellness"
+content: "Fresha inspires people to look and feel their best – which is why we're trusted by millions of customers and thousands of businesses worldwide"
+item:
+    # Solution item
+    - key : "Partner businesses"
+      value : "50,000+"
+          
+    # Solution item
+    - key : "Partner businesses"
+      value : "50,000+"
+    
+    # Solution item
+    - key : "Stylists and professionals"
+      value : "150,000+"
+    
+    # Solution item
+    - key : "Appointments booked"
+      value : "100,000+"

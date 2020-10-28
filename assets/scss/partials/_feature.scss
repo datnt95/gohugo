@@ -1,0 +1,55 @@
+.feature {
+    position: relative;
+  
+    &-item {
+      h4 {
+        line-height: 1;
+      }
+  
+      p {
+        line-height: 25px;
+      }
+  
+      &:hover {
+        .feature-icon {
+          box-shadow: 0px 18px 43px 0px rgba(0, 141, 236, 0.21);
+        }
+      }
+    }
+  
+    &-bg-1 {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-2 {
+      position: absolute;
+      right: 0;
+      bottom: 10%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-icon {
+      display: inline-block;
+      height: 90px;
+      width: 90px;
+      border-radius: 5px;
+      color: $white;
+      font-size: 45px;
+      line-height: 90px;
+      background: $primary-color;
+      box-shadow: 0px 18px 25px 0px rgba(0, 141, 236, 0.10);
+      text-align: center;
+      transition: .2s ease;
+    }
+  }

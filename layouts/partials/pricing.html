@@ -1,0 +1,29 @@
+{{ if .Site.Data.homepage.pricing.enable }}
+    <section class=" pb-0 pricing" id="pricing">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12 text-center">
+            {{ with .Site.Data.homepage.pricing }}
+            <h2 class="section-title">{{ .title }}</h2>
+            <p class="mb-50">{{ .description | safeHTML }}</p>
+            {{ end }}
+        </div>
+        <div class="col-lg-10 mx-auto">
+            <div class="row justify-content-center">
+            {{ range .Site.Data.homepage.pricing.table }}
+            <!-- pricing table -->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="rounded text-center pricing-table table-3">
+                <h4>{{ .title }}</h4>
+                <h1><span>$</span>{{ .value }}</h1>
+                <p>{{ .content }}</p>
+                <a href="{{ .URL }}" class="btn pricing-btn">{{ .btnText }}</a>
+                </div>
+            </div>
+            {{ end }}
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+{{ end }}

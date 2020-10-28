@@ -1,0 +1,31 @@
+.social-icon {
+  li {
+    margin: 0 12px;
+
+    a {
+      height: 45px;
+      width: 45px;
+      background: $white;
+      color: $text-color;
+      border-radius: 5px;
+      line-height: 45px;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.client-logo-slider {
+  img {
+    transition: .2s ease;
+  }
+
+  a {
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+

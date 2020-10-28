@@ -1,0 +1,6 @@
+# Marketing section
+enable : true
+image: "images/marketing/marketing-img.png"
+bgImage : "images/backgrounds/seo-bg.svg"
+title : "A Complete Range Of SEO Marketing Services!"
+content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.<br> There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."

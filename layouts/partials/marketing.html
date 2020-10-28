@@ -1,0 +1,21 @@
+{{ if .Site.Data.marketing.enable }}
+<!-- marketing -->
+<section class="seo">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6">
+        <div class="seo-image">
+          <img class="img-fluid" src="{{ .Site.Data.marketing.image | absURL }}" alt="form-img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        {{ with .Site.Data.marketing }}
+        <h3 class="section-title">{{ .title | safeHTML }}</h3>
+        <p>{{ .content | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /marketing -->
+{{ end }}

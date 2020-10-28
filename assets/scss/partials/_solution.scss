@@ -1,0 +1,15 @@
+.solution {
+    background-color: #f7f7f7;
+    .solution-item {
+      padding: 30px;
+      background-color: $white;
+      border-radius: 6px;
+    }
+    .solution-icon {
+      font-size: 30px;
+      color: $primary-color;
+    }
+    .content {
+      font-size: 15px;
+    }
+  }

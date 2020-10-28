@@ -1,0 +1,51 @@
+.service {
+    position: relative;
+    overflow: visible;
+  
+    &-list {
+      li {
+        margin-bottom: 30px;
+        color: $text-color;
+  
+        i {
+          margin-right: 20px;
+          color: $text-color;
+        }
+      }
+    }
+  
+    &-bg {
+      position: absolute;
+      right: 0;
+      top: -10%;
+      z-index: -1;
+      max-width: 40%;
+  
+      @include desktop {
+        max-width: 40%;
+        top: 0;
+      }
+    }
+  
+    &-bg-shape-1 {
+      position: absolute;
+      left: 0;
+      top: 150px;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-shape-2 {
+      position: absolute;
+      left: 40%;
+      bottom: 0;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  }

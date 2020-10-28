@@ -1,0 +1,51 @@
+.seo {
+    position: relative;
+    overflow: visible;
+    padding-top: 100px;
+  
+    &-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      max-width: 50%;
+  
+      @include desktop-lg {
+        max-width: 40%;
+      }
+    }
+  
+    &-bg-shape-1 {
+      position: absolute;
+      left: 25%;
+      top: 0;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-shape-2 {
+      position: absolute;
+      right: 2%;
+      top: 40%;
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  
+    &-bg-shape-3 {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      z-index: -1;
+  
+      @include tablet {
+        display: none;
+      }
+    }
+  }

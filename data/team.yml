@@ -1,0 +1,29 @@
+    enable : true
+    title : "Our Team"
+    description : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br> fugiat nulla pariatur. Excepteur sint occaecat"
+    bgImage : "images/backgrounds/team-bg.svg"
+    member:
+      # team member
+      - name : "Tri Do"
+        designation : "web designer"
+        image : "images/team/team-1.jpg"
+        content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they"
+        
+      # team member
+      - name : "Phu Duong"
+        designation : "web designer"
+        image : "images/team/team-2.jpg"
+        content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they"
+        
+      # team member
+      - name : "Bao Chau"
+        designation : "web developer"
+        image : "images/team/team-3.jpg"
+        content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they"
+        
+      # team member
+      - name : "Dat Nguyen"
+        designation : "web designer"
+        image : "images/team/team-1.jpg"
+        content : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they"
+        

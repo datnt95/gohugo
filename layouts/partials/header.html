@@ -28,7 +28,7 @@
           {{ end }}
         </ul>
         {{ if .Site.Params.navBtn.enable }}
-        <a href="{{ with .Site.Params.navBtn.URL }}{{ . | absURL }}{{ end }}" class="btn btn-primary ml-lg-3">{{ with .Site.Params.navBtn.btnText }}{{ . }}{{ end }}</a>
+        <a href="{{ with .Site.Params.navBtn.URL }}{{ . | absURL }}{{ end }}" class="btn btn-tertiary ml-lg-3">{{ with .Site.Params.navBtn.btnText }}{{ . }}{{ end }}</a>
         {{ end }}
       </div>
     </nav>

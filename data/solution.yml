@@ -1,0 +1,19 @@
+    enable : true
+    title : "A complete solution to manage your business"
+    description : "Our powerful suite of tools helps increase sales, manage your schedules and engage with your clients"
+    solutionItem:
+      # Solution item
+      - title : "Appointment scheduling"
+        icon : "ti-timer"
+        content : "Professional calendar tools, incredibly easy to use across mobiles, tablets and desktops"
+            
+      # Solution item
+      - title : "Reporting and analytics"
+        icon : "ti-stats-up"
+        content : "Optimize your business with insights from live performance dashboards and financial reporting" 
+      
+      # Solution item
+      - title : "Payment processing"
+        icon : "ti-credit-card"
+        content : "Effortless in-app payments with saved client cards, and in-store payment terminals"
+       

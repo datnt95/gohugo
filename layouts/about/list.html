@@ -12,13 +12,12 @@
           <p>{{ .content | safeHTML }}</p>
         </div>
         {{ end }}
-        <div class="col-lg-12">
-          <!-- about video -->
+        <!-- <div class="col-lg-12">
           <div class="about-video">
             <img class="img-fluid w-100" src="{{ with .Site.Data.about.about.videoThumb }}{{ . | absURL}}{{ end }}" alt="video-thumb">
             <a class="venobox play-btn" href="{{ with .Site.Data.about.about.videoURL }}{{ . | absURL}}{{ end }}" data-vbtype="iframe"><i class="ti-control-play"></i></a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

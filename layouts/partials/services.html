@@ -1,0 +1,52 @@
+{{ if .Site.Data.homepage.service.enable }}
+<!-- service -->
+<section class="section-lg service">
+<div class="container">
+    <div class="row justify-content-between">
+    <div class="col-md-5 order-2 order-md-1">
+        {{ with .Site.Data.homepage.service }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p class="mb-4">{{ .content }}</p>
+        {{ end }}
+        <ul class="pl-0 service-list">
+        {{ range .Site.Data.homepage.service.serviceList }}
+        <li><i class="{{ .icon }} text-purple"></i>{{ .title }}</li>
+        {{ end }}
+        </ul>
+    </div>
+    <div class="col-md-7 order-1 order-md-2">
+        <img class="img-fluid layer-3" src="{{ .Site.Data.homepage.service.image | absURL }}" alt="service">
+    </div>
+    </div>
+</div>
+<!-- background image -->
+<img class="img-fluid service-bg" src="{{ .Site.Data.homepage.service.bgImage | absURL }}" alt="service-bg">
+<!-- background shapes -->
+<img class="service-bg-shape-1 up-down-animation" src="{{ `images/background-shape/service-half-cycle.png` | relURL }}" alt="background-shape">
+<!-- <img class="service-bg-shape-2 left-right-animation" src="{{ `images/background-shape/feature-bg-2.png` | relURL }}" alt="background-shape"> -->
+<svg class="service-bg-shape-2"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="112px" height="112px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="112px" height="112px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="17" />
+    <feGaussianBlur result="blurOut" stdDeviation="5.657" />
+    <feFlood flood-color="rgb(140, 84, 255)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.27"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(156, 0, 255)"
+d="M79.783,62.989 L31.711,50.108 L66.902,14.917 L79.783,62.989 Z"/>
+</g>
+</svg>
+</section>
+<!-- /service -->
+{{ end }}

@@ -43,10 +43,10 @@ title = "My New Hugo Site"
   URL = "about"
   weight = 3
   
-  [[menu.main]]
-  name = "Service"
-  URL = "service"
-  weight = 4
+  # [[menu.main]]
+  # name = "Service"
+  # URL = "service"
+  # weight = 4
 
   [[menu.main]]
   name = "Team"
@@ -85,15 +85,16 @@ googleAnalitycsID = "Your ID"
   URL = "#"
 
   # Banner
-  [params.banner]
-  title = "Take Control of your <br> Project and Team"
-  content = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-  bgImage = "images/hero-area/banner-bg.svg"
-  image = "images/hero-area/banner-img.png"
-  btnText = "explore us"
-  URL = "#"
-    [params.banner.bgShape]
-    enable = true
+  # [params.banner]
+  # title = "Take Control of your Project and Team"
+  # content = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  # bgImage = "images/hero-area/banner-bg.svg"
+  # image = "images/hero-area/banner-img.png"
+  # btnText = "explore us"
+  # URL = "#"
+
+  [params.banner.bgShape]
+  enable = true
 
 
   # footer
